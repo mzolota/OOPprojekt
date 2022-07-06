@@ -14,4 +14,6 @@ public:
     Banka(string naziv);
     void ispis();
     void dodajKlijenta(Korisnik k,float stanje);
+    void dodajKlijenta(Korisnik k);
+    ~Banka();
 };

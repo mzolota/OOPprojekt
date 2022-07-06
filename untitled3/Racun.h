@@ -1,5 +1,5 @@
 #include <vector>
-
+#include "Transakcija.h"
 #include <string>
 
 using namespace std;
@@ -12,6 +12,8 @@ protected:
     int brojIsplata;
     string datumZadnjeIsplate;
     string datumZadnjeUplate;
+
+
 
 
 public:

@@ -30,3 +30,8 @@ template < typename T >
 void Transakcije<T>::setUplata(T uplata)  {
     this->uplate.push_back(uplata);
 }
+
+template < typename T >
+Transakcije<T>::Transakcije() {
+
+}

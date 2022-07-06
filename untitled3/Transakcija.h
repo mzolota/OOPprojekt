@@ -9,6 +9,7 @@ private:
     vector<T > uplate ;
     vector <T>isplate;
 public:
+    Transakcije();
     Transakcije(vector <T> uplata ,vector <T>  isplata);
     vector<T> getUplata();
     vector <T>getIsplata();

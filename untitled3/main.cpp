@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
 
-
+/*
     try {
 Banka primjer ("1wmrkva");
         Korisnik korisnik ("Marin" , "zolota" , "245335")  ;
@@ -24,7 +24,7 @@ Banka primjer ("1wmrkva");
         }
 
         try {
-            primjer.dodajKlijenta(korisnik2,100);
+            primjer.dodajKlijenta(korisnik2);
         }
         catch (char const* e ) {
             cout<< e;
@@ -34,17 +34,17 @@ Banka primjer ("1wmrkva");
         cout << e << endl;
     }
 
+ */
 
-
-
-
-
-
-
-
-
-
-
+Banka b ("zagrebacka") ;
+Korisnik k ("Marko","Marulic","0313323");
+Korisnik c ("Ivana","Brlic","3345");
+Korisnik d ("Pale","sam","031122");
+k.otvoriRacun(3000);
+b.dodajKlijenta(k);
+b.dodajKlijenta(c);
+b.dodajKlijenta(d,200);
+b.ispis();
 
     return 0;
 }

@@ -4,6 +4,7 @@
 #include <ctime>
 #include <chrono>
 
+
 using namespace std;
 Racun::Racun(){
     this->stanje=0;
@@ -46,6 +47,7 @@ void Racun::uplata(float iznos) {
     // uzeo sa stack overflova za mjerenje vremena
     this->datumZadnjeUplate=ctime(&end_time);
 
+
 }
 
 void Racun::isplata(float iznos) {
@@ -55,6 +57,7 @@ void Racun::isplata(float iznos) {
     std::time_t end_time = std::chrono::system_clock::to_time_t(end);
     // uzeo sa stack overflova za mjerenje vremena
     this->datumZadnjeIsplate=ctime(&end_time);
+
 
 }
 

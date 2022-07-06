@@ -14,6 +14,10 @@ Banka::Banka(string naziv) {
     this->brojKlijenata=0;
 }
 
+Banka::~Banka() {
+
+}
+
 void Banka::dodajKlijenta( Korisnik k, float stanje) {
     for (int i = 0 ; i < brojKlijenata ; i++) {
         if(klijenti[i].getOib()==k.getOib()) {
@@ -22,6 +26,18 @@ void Banka::dodajKlijenta( Korisnik k, float stanje) {
         }
     }
     k.otvoriRacun(stanje);
+    this->klijenti.push_back(k);
+    this->brojKlijenata++;
+}
+
+void Banka::dodajKlijenta( Korisnik k) {
+    for (int i = 0 ; i < brojKlijenata ; i++) {
+        if(klijenti[i].getOib()==k.getOib()) {
+
+            throw "Nije dozvoljeno imati 2 klijenta s istim OIB-om";
+        }
+    }
+    k.otvoriRacun(0);
     this->klijenti.push_back(k);
     this->brojKlijenata++;
 }

@@ -1,6 +1,6 @@
 #include <vector>
-#include "Transakcija.h"
 #include <string>
+#include "Transakcija.h"
 
 using namespace std;
 
@@ -14,9 +14,8 @@ protected:
     string datumZadnjeUplate;
 
 
-
-
 public:
+    Transakcije <float> transakcije;
     void uplata(float  iznos);
     void isplata(float iznos);
     void ispis();

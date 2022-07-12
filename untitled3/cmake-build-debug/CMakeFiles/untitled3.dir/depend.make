@@ -5,19 +5,22 @@ CMakeFiles/untitled3.dir/Banka.cpp.obj: \
  ../Banka.cpp \
  ../Banka.h \
  ../Korisnik.h \
- ../Racun.h
+ ../Racun.h \
+ ../Transakcija.h
 CMakeFiles/untitled3.dir/Korisnik.cpp.obj: \
  ../Korisnik.cpp \
  ../Korisnik.h \
- ../Racun.h
+ ../Racun.h \
+ ../Transakcija.h
 CMakeFiles/untitled3.dir/Racun.cpp.obj: \
  ../Racun.cpp \
- ../Racun.h
+ ../Racun.h \
+ ../Transakcija.h
 CMakeFiles/untitled3.dir/Transakcije.cpp.obj: \
- ../Transakcija.h \
  ../Transakcije.cpp
 CMakeFiles/untitled3.dir/main.cpp.obj: \
  ../Banka.h \
  ../Korisnik.h \
  ../Racun.h \
+ ../Transakcija.h \
  ../main.cpp

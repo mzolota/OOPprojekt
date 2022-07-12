@@ -9,13 +9,14 @@ using namespace std;
 
 
 
+
 int main() {
 
 /*
     try {
 Banka primjer ("1wmrkva");
         Korisnik korisnik ("Marin" , "zolota" , "245335")  ;
-        Korisnik korisnik2 ("Mario" , "Dudjak" , "245332");
+        Korisnik korisnik2 ("Ivan" , "Ivic" , "245332");
         try {
             primjer.dodajKlijenta(korisnik,100);
         }
@@ -34,7 +35,7 @@ Banka primjer ("1wmrkva");
         cout << e << endl;
     }
 
- */
+
 
 Banka b ("zagrebacka") ;
 Korisnik k ("Marko","Marulic","0313323");
@@ -45,6 +46,30 @@ b.dodajKlijenta(k);
 b.dodajKlijenta(c);
 b.dodajKlijenta(d,200);
 b.ispis();
+
+ */
+
+Banka banka("zagrebacka");
+Korisnik korisnik("Marin","Marulc","3335");
+korisnik.otvoriRacun(5000);
+korisnik.racuni[0].uplata(200);
+korisnik.racuni[0].transakcije.ispisUplata();
+korisnik.otvoriRacun(300);
+korisnik.racuni[1].uplata(2000);
+korisnik.racuni[1].transakcije.ispisUplata();
+
+Korisnik korisnik2("IVICA","Ivic","3333");
+korisnik2.otvoriDevizniRacun(500,"kune");
+korisnik2.devizniRacuni[0].ispis();
+
+
+
+
+
+
+
+
+
 
     return 0;
 }

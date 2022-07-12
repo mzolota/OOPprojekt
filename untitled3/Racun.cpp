@@ -46,6 +46,7 @@ void Racun::uplata(float iznos) {
     std::time_t end_time = std::chrono::system_clock::to_time_t(end);
     // uzeo sa stack overflova za mjerenje vremena
     this->datumZadnjeUplate=ctime(&end_time);
+    this->transakcije.setUplata(iznos);
 
 
 }
@@ -57,6 +58,7 @@ void Racun::isplata(float iznos) {
     std::time_t end_time = std::chrono::system_clock::to_time_t(end);
     // uzeo sa stack overflova za mjerenje vremena
     this->datumZadnjeIsplate=ctime(&end_time);
+    this->transakcije.setIsplata(iznos);
 
 
 }

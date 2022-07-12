@@ -33,3 +33,12 @@ void Korisnik::ispis() {
 string Korisnik::getOib() {
     return oib;
 }
+
+
+void Korisnik::otvoriDevizniRacun(float stanje,string valuta) {
+    DevizniRacun racun(stanje,valuta);
+    devizniRacuni.push_back(racun);
+    this->brojRacuna++;
+
+}
+

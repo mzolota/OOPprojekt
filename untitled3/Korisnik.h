@@ -9,8 +9,9 @@ private:
     string ime;
     string prezime;
     string oib; // za svaki slucaj ako pocne nulom
-    vector<Racun> racuni;
     int brojRacuna;
+
+
 
 
 public:
@@ -18,6 +19,10 @@ public:
     void otvoriRacun(float stanje);
     void ispis();
     string getOib();
+
+    vector<Racun> racuni;
+    vector<DevizniRacun> devizniRacuni;
+    void otvoriDevizniRacun(float stanje,string valuta);
 
 
 
